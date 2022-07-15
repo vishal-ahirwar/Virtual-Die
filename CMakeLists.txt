@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.0)
+project(Virtual-Die)
+add_subdirectory("Virtual Die")
+set(CMAKE_CXX_COMPILER clang++)
+add_executable(${PROJECT_NAME} main.cc)
+target_link_libraries(${PROJECT_NAME} vd)
